@@ -304,7 +304,9 @@ def train(
         if valid_loss < max_valid_loss:
             max_valid_loss = valid_loss
             print('Saving model ...')
-            if args.model == "WA-BERT":
+            if args.model == "CoASN-BERT":
+                torch.save(model, 'saved_models/CoASN-BERT_{}.pt'.format(args.dataset))
+            elif args.model == "WA-BERT":
                 torch.save(model, 'saved_models/WA-BERT_{}.pt'.format(args.dataset))
             elif args.model == "MAG-BERT":
                 torch.save(model, 'saved_models/MAG-BERT_{}.pt'.format(args.dataset))
@@ -312,7 +314,9 @@ def train(
                 torch.save(model, 'saved_models/WSA-BERT_{}.pt'.format(args.dataset))
 
 
-    if args.model == "WA-BERT":
+    if args.model == "CoASN-BERT":
+        model = torch.load('saved_models/CoASN-BERT_{}.pt'.format(args.dataset))
+    elif args.model == "WA-BERT":
         model = torch.load('saved_models/WA-BERT_{}.pt'.format(args.dataset))
     elif args.model == "MAG-BERT":
         model = torch.load('saved_models/MAG-BERT_{}.pt'.format(args.dataset))
