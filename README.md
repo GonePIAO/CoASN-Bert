@@ -19,5 +19,4 @@ $ mkdir data, saved_models
 ## Put CMU-MOSI and CMU-MOSEI datasets into data/ directory
 
 # Acknowledge
-We acknowledge [this great repository](https://github.com/qianfan1996/WSA-BERT) for reference.
-We acknowledge [this great repository](https://github.com/WasifurRahman/BERT_multimodal_transformer) for reference.
+We acknowledge [this great repository](https://github.com/qianfan1996/WSA-BERT) and [this great repository](https://github.com/WasifurRahman/BERT_multimodal_transformer) for reference.
