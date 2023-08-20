@@ -1,7 +1,7 @@
 # CoASN-BERT
-We will publish the code after the paper is published. Thank you for your attention.
+**We will publish the code after the paper is published. Thank you for your attention**.
 
-This repository contains the official implementation code of the paper Deep modular Co-Attention Shifting Network for Multimodal Sentiment Analysis.
+This repository contains the official implementation code of the paper **Deep modular Co-Attention Shifting Network for Multimodal Sentiment Analysis**.
 
 Note: We strongly recommend that you browse the overall structure of our code at first. If you have any question, feel free to contact us.
 ## First check that the requirements are satisfied:
