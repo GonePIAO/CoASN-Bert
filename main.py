@@ -23,7 +23,7 @@ from load_data import load_pkl
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", type=str, choices=["mosi", "mosei"], default="mosi")
-parser.add_argument("--model", type=str, choices=["MAG-BERT", "WA-BERT", "WSA-BERT"], default="WA-BERT")
+parser.add_argument("--model", type=str, choices=["CoASN-BERT", "MAG-BERT", "WA-BERT", "WSA-BERT"], default="CoASN-BERT")
 parser.add_argument("--max_words_length", type=int, default=50)
 parser.add_argument("--train_batch_size", type=int, default=48)
 parser.add_argument("--valid_batch_size", type=int, default=128)
